@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+
+<div id="app">
+    <div v-if="isShow">
+        <app-comp-teg v-bind:list="getList()"
+                      v-bind:isshow="true">Текст внутри слота
+        </app-comp-teg>
+    </div>
+    <button v-on:click="show()">press</button>
+</div>
+
+
+<template id="app-comp">
+    <div>
+
+        <div>
+            <ul v-for="l of list">
+                <li>{{l.prop}}</li>
+            </ul>
+        </div>
+        <div>
+            <slot></slot>
+        </div>
+
+    </div>
+
+</template>
+
+<script src="main.js"></script>
+</body>
+</html>
