@@ -1,6 +1,3 @@
-/**
- * Created by rukavitsyn-mn on 07.02.2019.
- */
 "use strict";
 (function () {
 	function _selectType(tag) {

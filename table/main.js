@@ -1,6 +1,4 @@
-/**
- * Created by rukavitsyn-mn on 06.02.2019.
- */
+"use strict";
 (function () {
     function _tableManager(element, headers, data) {
         let _data = data;
